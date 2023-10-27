@@ -2,7 +2,7 @@
 
 int main() {
     int matriz1[50][50], matriz2[50][50];
-    int linhas, colunas;
+    int linhas, colunas, inversas;
 
     printf("Insira a quantidade de linhas: ");
     scanf("%d", &linhas);
@@ -23,9 +23,7 @@ int main() {
             scanf("%d", &matriz2[i][j]);
         }
     }
-
-    int inversas; 
-
+    
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
             if (matriz1[i][j] + matriz2[i][j] != 0) {
@@ -43,6 +41,8 @@ int main() {
     } else {
         printf("As matrizes nao sao inversas!\n");
     }
+    
     getch();
+
     return 0;
 }

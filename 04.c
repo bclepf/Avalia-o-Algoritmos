@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    int matriz [20][20];
+    int matriz [50][50];
     int linhas, colunas;
 
     printf("Insira a quantidade de linhas: ");
@@ -29,6 +29,8 @@ int main(){
         }
         printf("\n");
     }
+    
     getch();
+
     return 0;
 }
